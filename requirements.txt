@@ -1,5 +1,6 @@
 requests
 asyncio
+job-queue
 nest_asyncio
 supabase
 telegram
