@@ -1,0 +1,8 @@
+requests
+asyncio
+nest_asyncio
+supabase
+telegram
+telegram-bot-python
+logging
+os
