@@ -170,13 +170,13 @@ async def check_prices(context: ContextTypes.DEFAULT_TYPE) -> None:
                         change_of_price = price_change
                         #expiremental
                         data = { 
-                            "chat_id": chat_id, # Store chat_id in the database
+                            "nickname": nickname, 
+                           "chat_id": chat_id,
                             "cryptocurrency": token_name, 
-                            "starting_price": previous_price, 
-                            "change_of_price": price_change, 
+                            "starting_price": starting_price, 
+                            "change_of_price": change_of_price, 
                             "price_after_change": current_price 
-                        }                
-                        
+                        }
                         try:
                             response = supabase.table('bot_data').insert(data).execute()
                             if response.get('status_code') == 201:
