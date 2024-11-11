@@ -4,5 +4,5 @@ job-queue
 nest_asyncio
 supabase
 telegram
-"python-telegram-bot[job-queue]"
+python-telegram-bot[job-queue]
 logging
